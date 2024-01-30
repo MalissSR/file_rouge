@@ -7,7 +7,7 @@ html ,body{
 body{
     background-color: black;
 }
-
+                                                                /* NAVBAR */
 .nav-link{
     color: rgb(255, 255, 255);
 }
@@ -16,6 +16,17 @@ body{
     display: flex;
     justify-content: center;
 }
+
+.navbar-toggler{
+    border: none;
+    color: rgb(123, 6, 177);
+}
+
+
+.navbar-nav>.active>a {
+    color: rgb(123, 6, 177);
+}
+
 
 .parallax {
     position: relative;
@@ -57,4 +68,34 @@ body{
     color: rgb(255, 255, 255);
   }
 
+  
+  /* Footer */
+
+  .footer {
+    background-color: #000000;
+    padding: 30px 0;
+  }
+  
+  .footer h3 {
+    color: rgb(123, 6, 177);
+  }
+  
+  .footer p {
+    color: #ffffff;
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons i {
+    font-size: 24px;
+    color: #007bff;
+  }
   
