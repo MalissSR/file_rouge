@@ -1,0 +1,58 @@
+html ,body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    background-color: black;
+}
+
+.nav-link{
+    color: rgb(255, 255, 255);
+}
+
+.navbar-custom{
+    display: flex;
+    justify-content: center;
+}
+
+.parallax {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    
+  }
+  
+  .parallax::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('images_the_district/Fond/delicieux-burger-3d-smartphone-moderne.jpg'); /* Remplacez par le chemin de votre image de parallaxe */
+    opacity: 0.6;
+   
+    z-index: -1;
+  }
+  
+.hero-section .container{
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+
+.hero-section h1{
+    color: rgb(255, 255, 255);
+  }
+
+
+.hero-section h2{
+    color: rgb(255, 255, 255);
+  }
