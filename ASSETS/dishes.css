@@ -1,0 +1,41 @@
+
+
+.dishescard img {
+    width: 100%;
+    height: 100%;
+  }
+
+.dishescard h5 {
+    display: flex;
+    justify-content: center;
+    color: rgb(123, 6, 177);}
+
+.dishescard p {
+    color: rgb(215, 253, 253);
+}
+
+main h1{
+    color: rgb(215, 253, 253);
+}
+/* 767 */
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    
+    .dishescard{
+        max-width: 75%;
+    }
+    
+    
+
+}

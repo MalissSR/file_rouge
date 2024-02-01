@@ -27,7 +27,16 @@ body{
     color: rgb(123, 6, 177);
 }
 
+.btn{
+  color: rgb(123, 6, 177);
+  border-radius: 5%;
+border-color:  rgb(123, 6, 177);
+}
+                                                              /* END OF NAVBAR */
 
+
+
+                                                              /* PARALLAX */
 .parallax {
     position: relative;
     height: 100%;
@@ -46,12 +55,17 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('images_the_district/Fond/delicieux-burger-3d-smartphone-moderne.jpg'); /* Remplacez par le chemin de votre image de parallaxe */
+    background-image: url('../images_the_district/Fond/delicieux-burger-3d-smartphone-moderne.jpg'); /* Remplacez par le chemin de votre image de parallaxe */
     opacity: 0.6;
    
     z-index: -1;
   }
   
+                                                          /* END OF PARALLAX */
+
+
+
+                                                          /* SECTION */
 .hero-section .container{
     height: 100vh;
     z-index: 1;
@@ -68,8 +82,10 @@ body{
     color: rgb(255, 255, 255);
   }
 
+                                                           /* END OF SECTION */
+
   
-  /* Footer */
+                                                               /* FOOTER */
 
   .footer {
     background-color: #000000;
@@ -98,4 +114,7 @@ body{
     font-size: 24px;
     color: #007bff;
   }
+
+
+                                                            /* END OF FOOTER */
   
