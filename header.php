@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="ASSETS/index.css">
     <link rel="stylesheet" href="ASSETS/category.css">
     <link rel="stylesheet" href="ASSETS/dishes.css">
+    <link rel="stylesheet" href="ASSETS/contact.css">
   </head>
 
 
@@ -28,10 +29,10 @@
                 <a class="nav-link fs-5" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item d-flex justify-content-center mx-auto ">
-                <a class="nav-link fs-5" href="#">Catégorie</a>
+                <a class="nav-link fs-5" href="#">Categorie</a>
               </li>
               <li class="nav-item d-flex justify-content-center mx-auto ">
-                <a class="nav-link fs-5 " href="#">Plat</a>
+                <a class="nav-link fs-5 " href="#">Dishes</a>
               </li>
               <li class="nav-item d-flex justify-content-center mx-auto ">
                 <a class="nav-link fs-5 " href="#">Contact</a>

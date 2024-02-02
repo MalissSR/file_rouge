@@ -14,7 +14,7 @@ require_once('header.php')
 <div class="parallax">
 
 
-<h1 class="mt-5 d-flex justify-content-center ">Catégorie : Pizza</h1>
+<h1 class="mt-5 d-flex justify-content-center ">Pizza  Categorie</h1>
 
 
 <div class="mt-5 row justify-content-evenly">
@@ -26,9 +26,9 @@ require_once('header.php')
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">Pizza Ananas</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-   
+        <h5 class="card-title">Pizz'Ananaze</h5>
+        <p class="card-text">Explore our delicious Hawaiian pizza, a perfect blend of sweet and savory flavors. Our crispy crust is generously topped with melted cheese, tasty ham, and juicy pineapple for an unforgettable tropical taste experience. Order now and treat yourself to a burst of exquisite flavors.</p>
+        <a href="#"><button class="btn " type="submit">Order</button></a>
       </div>
     </div>
   </div>
@@ -41,9 +41,9 @@ require_once('header.php')
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">Pizza Champignon</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-       
+        <h5 class="card-title">Mushroom Pizza</h5>
+        <p class="card-text">Indulge in our savory Mushroom & Crispy Onion pizza, where earthy mushrooms and perfectly crispy onions meet a golden crust. Topped with a blend of melted cheeses, this pizza offers a delightful harmony of flavors and textures. Order now for a mouthwatering experience.</p>
+        <a href="#"><button class="btn " type="submit">Order</button></a>
       </div>
     </div>
   </div>
@@ -63,8 +63,9 @@ require_once('header.php')
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">Pizza Chorizo</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <h5 class="card-title">Chorizo Pizza</h5>
+        <p class="card-text">Savor the bold and spicy flavors of our Chorizo pizza. This culinary masterpiece features zesty chorizo sausage, melted cheese, and a robust tomato sauce on a perfectly baked crust. Spice up your pizza experience by ordering this unique and delicious option today.</p>
+        <a href="#"><button class="btn " type="submit">Order</button></a>
      
       </div>
     </div>
@@ -79,9 +80,9 @@ require_once('header.php')
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">Pizz'Ananaze </h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-       
+        <h5 class="card-title">Mozarella Pizza </h5>
+        <p class="card-text">Enjoy the classic simplicity of our Mozzarella pizza. Immerse yourself in the gooey goodness of melted mozzarella cheese atop a golden, thin crust. Paired with our rich tomato sauce, this pizza is a timeless favorite that promises a satisfying and cheesy delight. Order now for a taste of pizza perfection.</p>
+        <a href="#"><button class="btn " type="submit">Order</button></a>
       </div>
     </div>
   </div>

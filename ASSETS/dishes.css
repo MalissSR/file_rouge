@@ -14,10 +14,16 @@
     color: rgb(215, 253, 253);
 }
 
+.dishescard a{
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+}
+
+
 main h1{
     color: rgb(215, 253, 253);
 }
-/* 767 */
 
 
 
@@ -37,5 +43,41 @@ main h1{
     }
     
     
+
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+    
+    .dishescard{
+        max-width: 650px;
+       
+    }
+    
+    
+
+}
+
+@media screen and (min-width:991px){
+  
+    .dishescard{
+        max-width: 90%;
+}
+
+
+
+.dishescard h5 {
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;    
+    color: rgb(123, 6, 177);
+    
+}
+
+.dishescard p {
+    color: rgb(215, 253, 253);
+    font-size: x-large;
+}
 
 }

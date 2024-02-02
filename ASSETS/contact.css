@@ -1,0 +1,39 @@
+form {
+    background-color: rgba(0, 0, 0, 0.91);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: rgb(215, 253, 253);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contactinput, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(123, 6, 177);
+    border-radius: 5px;
+    color: rgb(123, 6, 177);
+}
+
+#btnsend{
+   width: 100%;
+}
+
+
+
+input[type="submit"] {
+    background-color: rgb(123, 6, 177);
+    color: rgb(215, 253, 253);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(215, 253, 253);
+    color: rgb(123, 6, 177);
+}
+
