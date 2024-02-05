@@ -11,7 +11,7 @@ require_once('header.php')
 <div class="parallax">
 
 
-<h1 class="mt-4 mb-4 d-flex justify-content-center">Contactez-nous</h1>
+<h1 class="mt-4 mb-4 d-flex justify-content-center">Contact Us</h1>
 
 <form action="#" method="post" class="formcontact mx-auto w-75  mb-5 ">
     <label for="nom">Name :</label>
