@@ -8,7 +8,8 @@
 .dishescard h5 {
     display: flex;
     justify-content: center;
-    color: rgb(123, 6, 177);}
+    color: rgb(123, 6, 177);
+}
 
 .dishescard p {
     color: rgb(215, 253, 253);
@@ -24,10 +25,6 @@
 main h1{
     color: rgb(215, 253, 253);
 }
-
-
-
-
 
 
 

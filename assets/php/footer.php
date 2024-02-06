@@ -8,16 +8,16 @@
     <footer class="footer ">
       <div class="row">
         <div class="col-md-4 d-none d-md-block">
-          <h3>About Us</h3>
+          <h3>A propos de nous</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <div class="col-md-4">
-          <h3>Contact Us</h3>
+          <h3>Contactez-nous</h3>
           <p>Email : contact@example.com</p>
           <p>Phone number : +33 123 456 789</p>
         </div>
         <div class="col-md-4">
-          <h3>Follow-Us</h3>
+          <h3>Suivez-nous</h3>
                                                             <!-- END OF FOOTER -->
 
 
@@ -74,7 +74,7 @@
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-<script src="category.js"></script>
+<script src="assets/JavaScript/category.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
