@@ -37,3 +37,7 @@ input[type="submit"]:hover {
     color: rgb(123, 6, 177);
 }
 
+#messageConfirmation {
+    margin-top: 20px;
+    font-weight: bold;
+}
