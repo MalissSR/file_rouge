@@ -14,7 +14,7 @@ require_once('assets/php/header.php')
         <h1 class="d-sm-flex d-md-none fs-2">Bienvenue à The District</h1>
 
         <h2 class="d-none d-md-flex fs-1">Découvrez notre nouveau site de restauration en ligne !</h2>
-        <h2 class="d-sm-flex d-md-none fs-5">Découvrez notre nouveau site de restauration en ligne !</h2>
+        <h2 class="d-sm-flex d-md-none fs-6">Découvrez notre nouveau site de restauration en ligne !</h2>
 
     </div>
 
