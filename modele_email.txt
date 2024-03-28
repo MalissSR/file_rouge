@@ -1,0 +1,16 @@
+Bonjour {{prenom}} {{nom}},
+
+Merci pour votre commande ! Voici les détails de votre commande :
+
+Téléphone : {{telephone}}
+Adresse : {{adresse}}
+Adresse e-mail : {{email}}
+
+
+
+Pour toute question supplémentaire ou pour plus d'informations, n'hésitez pas à nous contacter à l'adresse email@example.com ou par téléphone au +123456789.
+
+Nous vous remercions pour votre confiance et restons à votre disposition pour toute question supplémentaire.
+
+Cordialement,
+L'équipe de District

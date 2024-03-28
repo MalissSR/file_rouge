@@ -1,3 +1,5 @@
+
+
 <?php
 
 require_once('assets/php/header.php')
@@ -13,7 +15,7 @@ require_once('assets/php/header.php')
 
         <h1 class="mt-4 mb-4 d-flex justify-content-center">Contactez-nous</h1>
 
-            <form action="traitement.php" method="post" class="formcontact mx-auto w-75  mb-5 ">
+            <form action="traitement_contact.php" method="post" class="formcontact mx-auto w-75  mb-5 ">
                 <label for="nom">Nom :</label>
                 <input type="text" id="nom" name="nom" class="contactinput mb-5" required>
 

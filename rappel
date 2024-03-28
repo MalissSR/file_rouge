@@ -1,0 +1,34 @@
+// Création du fichier DAO.php:
+
+// Commencez par créer un fichier nommé "DAO.php".
+// À l'intérieur de ce fichier, vous allez créer des fonctions pour effectuer des requêtes SQL à la base de données en utilisant PDO (PHP Data Objects).
+// Par exemple, vous pouvez écrire une fonction get_categories() qui récupère les catégories depuis la base de données.
+// Intégration du fichier DAO.php:
+
+// Incluez le fichier DAO.php dans toutes les pages où vous avez besoin d'effectuer des requêtes SQL. Utilisez require_once('DAO.php') pour inclure le fichier.
+// Modification des pages existantes:
+
+// Ajoutez des appels aux fonctions du fichier DAO.php pour récupérer les données à afficher sur chaque page.
+// Sur la page d'accueil, récupérez les catégories populaires et les plats les plus vendus en utilisant les fonctions appropriées.
+// Sur la page des catégories, récupérez les catégories actives.
+Sur la page des plats, récupérez les détails des plats à afficher.
+// Ajout du header et du footer:
+
+// Créez des fichiers de header et de footer (par exemple, "header.php" et "footer.php") contenant le code HTML du header (incluant le menu) et du footer respectivement.
+// Incluez ces fichiers sur toutes les pages en utilisant require_once('header.php') et require_once('footer.php').
+// Personnalisation de la page d'accueil:
+
+Ajoutez une barre de recherche sur la page d'accueil.
+
+
+
+// Affichez les catégories les plus populaires (limitées à 6) et les plats les plus vendus.
+// Personnalisation de la page des catégories:
+
+// Affichez les catégories actives (limitées à 6).
+// Personnalisation de la page des plats:
+
+Affichez les détails des plats, y compris le libellé, la description, le prix et un bouton pour passer une commande.
+Envoi d'un email de confirmation:
+
+Lorsqu'un client passe une commande, utilisez la bibliothèque PHPMailer pour envoyer un email de confirmation contenant les détails de la commande.

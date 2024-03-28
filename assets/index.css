@@ -1,13 +1,15 @@
-html ,body{
-    padding: 0;
-    margin: 0;
-    height: 100%;
-}
+
 
 body{
     background-color: black;
 }
-                                                                /* NAVBAR */
+
+
+
+
+ /*NAVBAR */
+
+
 .nav-link{
     color: rgb(255, 255, 255);
 }
@@ -23,10 +25,10 @@ body{
 }
 
 
-.navbar-nav>.active>a {
-    color: rgb(123, 6, 177);
+.navbar-nav .nav-item .nav-link.active {
+  font-weight: bold;
+  color: rgb(201, 47, 248);
 }
-
 .btn{
   color: rgb(123, 6, 177);
   border-radius: 5%;
@@ -34,11 +36,16 @@ border-color:  rgb(123, 6, 177);
 }
 
 
-                                                              /* END OF NAVBAR */
+ /* END OF NAVBAR */
 
 
 
-                                                              /* PARALLAX */
+
+
+
+
+ /* PARALLAX */
+
 .parallax {
     position: relative;
     height: 100%;
@@ -63,31 +70,69 @@ border-color:  rgb(123, 6, 177);
     z-index: -1;
   }
   
-                                                          /* END OF PARALLAX */
+  /* END OF PARALLAX */
 
 
 
-                                                          /* SECTION */
-.hero-section .container{
-    height: 100vh;
-    z-index: 1;
+  /*CARD*/
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .card {
+    background-color: rgba(0,0,0,0.91);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
+    padding: 0.5rem;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card h2 {
+    margin: 0.5rem 0;
+    color: rgb(123, 6, 177);
+  }
+  
+
+  #popular-h2{
+  color: azure;
 }
 
-
-.hero-section h1{
-    color: rgb(255, 255, 255);
+  #popular-title{
+    color: rgb(123, 6, 177);
   }
 
+  .btn-commander {
+    background-color: rgb(123, 6, 177);
+    color: #fff;
+    border: none;
+    border-radius: 5%;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none; /* Supprimer la soulignement du lien */
+    display: inline-block; /* Assurez-vous que le lien occupe uniquement l'espace nécessaire */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 
-.hero-section h2{
-    color: rgb(255, 255, 255);
-  }
+.btn-commander:hover {
+    background-color: #5e2d6d; /* Changez la couleur au survol si nécessaire */
+}
 
-                                                           /* END OF SECTION */
-
+/* END OF CARD*/
   
-                                                               /* FOOTER */
+
+
+
+  /* FOOTER */
 
   .footer {
     background-color: #000000;
@@ -118,5 +163,35 @@ border-color:  rgb(123, 6, 177);
   }
 
 
-                                                            /* END OF FOOTER */
+  /* END OF FOOTER */
   
+
+
+
+
+  /*PAGE CATEGORIE*/
+
+  .title-categorie{
+    color: #4d9cf0;
+
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .btncategorie {
+    background-color: rgb(123, 6, 177);
+    color: #fff;
+    border: none;
+    border-radius: 5%;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none; /* Supprimer la soulignement du lien */
+    display: inline-block; /* Assurez-vous que le lien occupe uniquement l'espace nécessaire */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btncategorie:hover {
+    background-color: #5e2d6d; /* Changez la couleur au survol si nécessaire */
+}

@@ -1,5 +1,0 @@
-nom: l'éponge
-prenom: Bob
-email: pop@tappp.plouf
-telephone: 0123456789
-demande: des sous !
