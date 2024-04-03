@@ -59,7 +59,7 @@ $plats = get_plats_by_categorie($id_categorie);
             ?>
         </div>
     </div>
-        </div>
+    </div>
 </article>
 
 <?php

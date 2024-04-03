@@ -43,22 +43,30 @@ try {
         $adresse = $_POST['adresse'];
         $email = $_POST['email'];
 
-        // Validation des données (vous pouvez ajouter vos propres règles de validation ici)
+        // Validation des données
+        if (!empty($nom) && !empty($prenom) && !empty($telephone) && !empty($adresse) && !empty($email)) {
+            // Validation supplémentaire du numéro de téléphone et de l'email
+            if (preg_match('/^[A-Za-zÀ-ÖØ-öø-ÿ\s-]{2,}$/', $nom) && preg_match('/^[A-Za-zÀ-ÖØ-öø-ÿ\s-]{2,}$/', $prenom) && preg_match('/^[0-9]{10}$/', $telephone) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                // Préparation de la requête d'insertion
+                $stmt = $pdo->prepare("INSERT INTO commandes (nom, prenom, telephone, adresse, email) VALUES (:nom, :prenom, :telephone, :adresse, :email)");
 
-        // Préparation de la requête d'insertion
-        $stmt = $pdo->prepare("INSERT INTO commandes (nom, prenom, telephone, adresse, email) VALUES (:nom, :prenom, :telephone, :adresse, :email)");
+                // Liaison des paramètres
+                $stmt->bindParam(':nom', $nom);
+                $stmt->bindParam(':prenom', $prenom);
+                $stmt->bindParam(':telephone', $telephone);
+                $stmt->bindParam(':adresse', $adresse);
+                $stmt->bindParam(':email', $email);
 
-        // Liaison des paramètres
-        $stmt->bindParam(':nom', $nom);
-        $stmt->bindParam(':prenom', $prenom);
-        $stmt->bindParam(':telephone', $telephone);
-        $stmt->bindParam(':adresse', $adresse);
-        $stmt->bindParam(':email', $email);
+                // Exécution de la requête
+                $stmt->execute();
 
-        // Exécution de la requête
-        $stmt->execute();
-
-        echo "Votre commande a été enregistrée avec succès !";
+                echo "Votre commande a été enregistrée avec succès !";
+            } else {
+                echo "Veuillez saisir des informations valides.";
+            }
+        } else {
+            echo "Veuillez remplir tous les champs du formulaire.";
+        }
     }
 } catch (PDOException $e) {
     echo "Erreur lors de la connexion à la base de données : " . $e->getMessage();
@@ -83,33 +91,33 @@ if (isset($_GET['id'], $_GET['libelle'], $_GET['description'], $_GET['prix'], $_
                 <h5 class="card-title"><?php echo $plat_libelle; ?></h5>
                 <p class="card-text"><?php echo $plat_description; ?></p>
                 <p class="card-text">Prix : <?php echo $plat_prix; ?></p>
-            </div>
-        </div>
+                </div>
+</div>
 
-<h2>Formulaire de Commande</h2>
-<form id="commandeForm" method="post" action="traitement.php?id=<?php echo $plat_id; ?>&libelle=<?php echo $plat_libelle; ?>&description=<?php echo $plat_description; ?>&prix=<?php echo $plat_prix; ?>&image=<?php echo $plat_image; ?>">
-        <label for="nom">Nom :</label><br>
-        <input type="text" id="nom" name="nom" required><br>
-        <span id="erreur-nom"></span><br>
+        <h2>Formulaire de Commande</h2>
+        <form id="commandeForm" method="post" action="traitement.php?id=<?php echo $plat_id; ?>&libelle=<?php echo $plat_libelle; ?>&description=<?php echo $plat_description; ?>&prix=<?php echo $plat_prix; ?>&image=<?php echo $plat_image; ?>">
+            <label for="nom">Nom :</label><br>
+            <input type="text" id="nom" name="nom" required><br>
+            <span id="erreur-nom"></span><br>
 
-        <label for="prenom">Prénom :</label><br>
-        <input type="text" id="prenom" name="prenom" required><br>
-        <span id="erreur-prenom"></span><br>
+            <label for="prenom">Prénom :</label><br>
+            <input type="text" id="prenom" name="prenom" required><br>
+            <span id="erreur-prenom"></span><br>
 
-        <label for="telephone">Téléphone :</label><br>
-        <input type="text" id="telephone" name="telephone" required><br>
-        <span id="erreur-telephone"></span><br>
+            <label for="telephone">Téléphone :</label><br>
+            <input type="text" id="telephone" name="telephone" required><br>
+            <span id="erreur-telephone"></span><br>
 
-        <label for="adresse">Adresse :</label><br>
-        <textarea id="adresse" name="adresse" rows="4" required></textarea><br>
-        <span id="erreur-adresse"></span><br>
+            <label for="adresse">Adresse :</label><br>
+            <textarea id="adresse" name="adresse" rows="4" required></textarea><br>
+            <span id="erreur-adresse"></span><br>
 
-        <label for="email">Adresse e-mail :</label><br>
-        <input type="email" id="email" name="email" required><br>
-        <span id="erreur-email"></span><br>
+            <label for="email">Adresse e-mail :</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <span id="erreur-email"></span><br>
 
-        <input type="submit" value="Valider la commande">
-    </form>
+            <input type="submit" value="Valider la commande">
+        </form>
 </div>
    <?php
    require_once('assets/php/footer.php')

@@ -15,7 +15,7 @@ function connect_to_database() {
         return $pdo;
     } catch (PDOException $e) {
         die("Erreur de connexion à la base de données: " . $e->getMessage());
-    }""
+    }
 }
 
 
